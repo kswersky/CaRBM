@@ -1,4 +1,4 @@
-"""
+/*
 Code provided by Kevin Swersky, Danny Tarlow, Ilya Sutskever, Ruslan Salakhutdinov, Rich Zemel and Ryan Adams.
 
 Permission is granted for anyone to copy, use, modify, or distribute this
@@ -14,7 +14,8 @@ application.  All use of these programs is entirely at the user's own risk.
 
 This code implements the methods described in the paper:
 Cardinality Restricted Boltzmann Machines. NIPS 2012.
-"""
+*/
+
 #include <iostream>
  #include <stdio.h>
  #include <cstdlib>
