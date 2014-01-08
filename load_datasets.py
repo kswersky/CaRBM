@@ -5,16 +5,14 @@ import copy
 import glob
 import os
 import sys
-sys.path.append(os.path.expanduser('~/gobi3/data/mnist/'))
-sys.path.append(os.path.expanduser('~/gobi3/data/cifar10/'))
-
+DATA_PREFIX = 'data/'
 def load_cifar10_patches():
-    D = loadmat('patches_16x16.mat')
+    D = loadmat(DATA_PREFIX + 'patches_16x16.mat')
     return D['patches']
     
 def load_mnist(digitsRange,binary=True):
 	digitsRange = copy.copy(digitsRange)
-	digits = loadmat('mnist_all.mat')
+	digits = loadmat(DATA_PREFIX + 'mnist_all.mat')
 	d = digits['train'+str(digitsRange[0])]
 	dTest = digits['test'+str(digitsRange[0])]
 	if (len(digitsRange)<=2 and binary):
